@@ -19,6 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build && cp build/index.html build/404.html", // this will prevent page reloads to give a  404 error
+    BrowserRouter basename={process.env.PUBLIC_URL}
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
